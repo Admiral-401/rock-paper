@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Rock-paper-scissor</title>
+</head>
+<body>
+  <div class="gameContainer">
+    <div class="score">
+      <p>Score Board</p>
+      <div>
+        <p id="draws"></p>
+        <p id="myScore"></p>
+        <p id="compScore"></p>
+      </div>
+      <div>
+        <button id="reset"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </div>
+    
+    <fieldset>
+  <legend>Choose Rock Paper or Scissors</legend>
+  <button class="click"><i class="fa-solid fa-hand-back-fist"></i></button>
+  <button class="click1"><i class="fa-solid fa-paper-plane"></i></button>
+  <button class="click2"><i class="fa-solid fa-scissors"></i></button>
+
+  <i class="fa-light fa-hand-back-fist"></i>
+</fieldset>
+ 
+<div class="results">
+  <p id="display"></p>
+</div>
+  </div>
+
+  <script src="main.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
