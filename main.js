@@ -9,8 +9,8 @@ const ties = document.getElementById("draws");
 const reStart = document.getElementById("reset");
 
   let ourDraw = 0;
-  let userScoreUpdater = 1;
-  let computerScoreUpdater = 1;
+  let userScoreUpdater = 0;
+  let computerScoreUpdater = 0;
 
 const gamePlay = (userChoice) => {
   //computer choice logic
@@ -19,7 +19,7 @@ const gamePlay = (userChoice) => {
 
   //game play win lose conditions
   if(userChoice === computerChoice){
-    ties.textContent = `Drawn ${++ourDraw} Times`
+    ties.textContent = `Drawn X ${++ourDraw}`
     text.textContent = `You chose ${userChoice} and computer chose ${computerChoice}, its a Tie`
   }else if(
     (userChoice === "rock" && computerChoice === "scissors") ||
@@ -27,7 +27,7 @@ const gamePlay = (userChoice) => {
     (userChoice === "paper" && computerChoice === "rock")
 ){
     //score updater
-  if(userScoreUpdater === 10){
+  if(userScoreUpdater === 9){
   text.textContent = "User wins overall score!"
   disableBtn();
   popCon();
@@ -37,7 +37,7 @@ const gamePlay = (userChoice) => {
   text.textContent = `You chose ${userChoice} and computer chose ${computerChoice}, You win`
 }else{
   //computer score updater
-    if(computerScoreUpdater === 10){
+    if(computerScoreUpdater === 9){
   text.textContent = "User loses, computer wins overall score!"
   disableBtn();
   popCon();
